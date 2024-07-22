@@ -1,0 +1,157 @@
+*{
+    
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+section{
+    padding:100px;
+    display:flex;
+    position:relative;
+    justify-content:space-between;
+    align-items:center;
+    background:#fff;
+    width:100%;
+    min-height:80vh;
+}
+
+header{
+
+    padding:40px 100px ;
+    display:flex;
+    position:absolute;
+    justify-content:right;
+    right:0%;
+    align-items:center;
+    top:0%;
+    cursor:pointer;
+}
+
+
+
+header ul{
+    position:fixed;
+    display:flex;
+    justify-content: right;
+}
+
+header ul li{
+    list-style:none;
+    transition:0.5;
+     
+}
+
+header ul li:hover{
+    transform:translateY(-16%);
+    
+}
+
+header ul li a{
+    display:inline;
+    color:#000000;
+    text-decoration:none;
+    margin-right:40px;
+    padding:0;
+    
+     
+}
+
+ 
+.hi{
+    position:relative;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space between;
+    cursor:pointer ;
+}
+.hi .Q2{
+position:relative;
+width: 900px;
+}
+
+.hi .Q2 h2{
+    color:#000000;
+    line-height:2em;
+    font-weight:800;
+    font-size :2.5em; 
+}
+
+.hi .Q2 h2 span{
+    color:aqua;
+    font-size:2.2em;
+}
+
+.hi .Q2 p{
+    color:#000000;
+}
+
+.hi .Q2 a{
+
+    text-decoration:none;
+     margin-top:30px;
+    border-radius: 40px;
+    padding: 8px 20px;
+    letter-spacing:1px;
+    font-weight:500;
+    background-color: aqua;
+    color:white;
+    display:inline-block;
+    transition:0.5s;
+
+     
+}
+
+.hi .Q2 a:hover{
+    transform:translateY(-16%);
+}
+
+.hi .we{
+    width:600px;
+    margin-bottom:50px;
+    padding-left:30px;
+    justify-content:flex-end;
+    display: flex;
+}
+
+.rod{
+    position:absolute;
+    bottom:10px;
+    left:55%;
+    display:flex;
+    transform:translateX(-60%);
+    align-items:center;
+     
+
+}
+
+.rod li{
+    list-style: none;
+    display:inline-block;
+    margin: 0px 20px;
+    cursor: pointer;
+    transition:0.5s;
+
+
+}
+
+.rod li :hover{
+    transform:translateY(-16%);
+}
+
+.rod img{
+    width:100px;
+    height: 90px;
+}
+ 
+.oval{
+    position:absolute;
+    height:100%;
+    width:100%;
+    background:aqua;
+    top:0;
+    left:0;
+    clip-path:circle(600px at right 1px );
+}

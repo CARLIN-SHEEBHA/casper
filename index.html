@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="UTF-8">
+<title>UNKNOWN</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<section>
+    <div class="oval"></div>
+
+    <header>
+         <uL>
+            <li><a href ="#">Home</a></li>
+            <li><a href ="#">About</a></li>
+            <li><a href ="#">Product</a></li>
+            <li><a href ="#">Contact</a></li>
+        </uL>
+        
+    </header>
+
+    <div class ="hi">
+        <div class="Q2">
+            <h2>WEAR YOUR FOOT WINGS <br>GO <span>ANYWHERE</span></h2>
+            <p>Types of Shoes: There are numerous types of shoes available for different occasions and activities, including athletic shoes, casual shoes, dress shoes, boots, sandals, heels, flats, loafers, sneakers, and more. Each type serves a specific purpose, offering features tailored to the intended use.
+
+                Materials: Shoes can be made from a wide range of materials, such as leather, suede, canvas, synthetic fabrics, rubber, and various types of textiles. The choice of material depends on factors like comfort, durability, breathability, and style.
+                
+                Shoe Components: Shoes consist of several components, including the upper, which covers the top of the foot; the sole, providing cushioning and traction; the insole, located inside the shoe for additional comfort and support; the outsole, the bottom part of the shoe that makes contact with the ground; and various closures like laces, straps, zippers, or elastic bands to secure the shoe on the foot.
+                
+                Foot Support and Comfort: Shoes are designed to provide support and cushioning to the feet, helping to absorb impact, reduce strain, and maintain proper foot alignment. Many shoes incorporate features such as arch support, padded insoles, cushioned midsoles, and ergonomic designs to enhance comfort</p>
+        <a href="#">Read more</a>
+    </div>
+    <div class="we">
+        <img src="51JWGwQQ21L-removebg-preview.png" class="stev">
+    </div>
+</div>
+<ul class="rod">
+    <li><img src="51JWGwQQ21L-removebg-preview.png" onclick="changeColor( ) ; changeSlide('img1.png.png')"></li>
+    <li><img src="71N6mH2rA4L._AC_UY1000_.jpg" onclick="changeColor( );changeSlide('img3.png - Copy.png')"></li>
+    <li><img src="4550002235956_1260-removebg-preview.png"  onclick="changeColor( ) ; changeSlide('all.jpg.png')"></li>
+    <li><img src="clock.jpeg.png"  onclick="changeColor( ) ; changeSlide('clock.jpeg.png')"></li>
+     
+</ul>
+ 
+</section>
+
+ 
+<script>
+    function changeColor() {
+      var element = document.querySelector(".oval");
+      var colors = ["pink","black","aquamarine","purple","red"];
+      var randomColor = colors[Math.floor(Math.random() * colors.length)];
+      element.style.backgroundColor = randomColor;
+    }
+ 
+    const sliderImage = document.querySelector('.stev');
+    
+    function changeSlide(imageUrl) {
+      sliderImage.style.transform = 'scale(0.8)';
+      setTimeout(() => {
+        sliderImage.src = imageUrl;
+        sliderImage.style.transform = 'scale(1)';
+      }, 500);
+    }
+    
+  </script>
+ 
+
+
+
+</body>
+</html>
